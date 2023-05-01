@@ -4,7 +4,11 @@
 - Bradley
 - Christopher
 - Laine
-
+## Technologies:
+- Jupyter Notebook/Python
+- SQL
+- MachineLearning/Confusion Matrix - Accuracy Score
+- Tableau/Visualizations - story telling
 ## Current Processes:
 - Bradley has created a clean data set through Python coding and SQL database/table creation.
 - Laine has placed the CSV in MachineLearning and pre-processed the data leading up to training the model.
