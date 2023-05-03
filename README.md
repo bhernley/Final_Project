@@ -1,6 +1,6 @@
 # Final Project - Diabetes Factors
 ## Question to be answered: 
-What correlations can be made by age group w/different factors identified (i.e. hypertension, bmi, heart disease, smoking history, etc.)?
+What correlations between behavioral and physical indicators of diabetes can be identified given the relevant factors available in our data set (i.e. hypertension, bmi, heart disease, smoking history, etc.)?
 ## Links:
 Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN18IX1v0AwdYgSdBLA/edit?usp=sharing
 
