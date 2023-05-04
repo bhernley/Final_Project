@@ -1,4 +1,6 @@
 # Final Project - Diabetes Factors
+## Data Source Details: Selected due to data integrity and analysis behind what can cause or be a factor in having diabetes.
+Diabetes dataset pulled from online data source Kaggle. This dataset highlights a certain amount of the population and their health information revolving around whether or not they have diabetes.
 ## Question to be answered: 
 What correlations can be made by age group w/different factors identified (i.e. hypertension, bmi, heart disease, smoking history, etc.)?
 ## Links:
@@ -8,6 +10,7 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 - Bradley
 - Christopher
 - Laine
+### Communicate through Slack every day concerning progress of personal tasks.
 ## Technologies:
 - Jupyter Notebook/Python
 - SQL
