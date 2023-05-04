@@ -1,4 +1,7 @@
+
 # Final Project - Diabetes Factors
+## Data Source Details: Selected due to data integrity and analysis behind what can cause or be a factor in having diabetes.
+Diabetes dataset pulled from online data source Kaggle. This dataset highlights a certain amount of the population and their health information revolving around whether or not they have diabetes.
 ## Question to be answered: 
 What correlations between behavioral and physical indicators of diabetes can be identified given the relevant factors available in our data set (i.e. hypertension, bmi, heart disease, smoking history, etc.)?
 ## Links:
@@ -8,14 +11,15 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 - Bradley
 - Christopher
 - Laine
+### Communicate through Slack every day concerning progress of personal tasks.
 ## Technologies:
 - Jupyter Notebook/Python
 - SQL
 - MachineLearning/Confusion Matrix - Accuracy Score
 - Tableau/Visualizations - story telling
 ## Current Processes:
-- Bradley has created a clean data set through Python coding and SQL database/tables.
-- Laine has placed the CSV in MachineLearning -  and pre-processed the data leading up to training the model.
+- Bradley has created a clean data set through Python coding and SQL database/tables and binary categories to be used in the machinelearning model
+- Laine will analyze the CSV in MachineLearning to use Random Forest Classifier/Decision Tree (maybe Logistic Regression) w/a confusion matrix and accuracy score -  and pre-processed the data leading up to training the model in Neural network as a bonus.
 - Christopher is working on Tableau visualization/interactive dashboard showcasing the likelihood of diabetes based on factors.
 ## Challenges:
 - Identifying proper MachineLearning techniques to coding. Trouble rectifying the data set question to the MachineLearning.
