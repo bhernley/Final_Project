@@ -72,6 +72,7 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 ## Moving Forward:
 **Segment 1 Requirements:**
 - [ ] Need to fix table issues recorded in grade review - README.md has been updated as mentioned in review
+
 **Segment 2 Requirements:**
 - [ ] Detailed README.md that includes project status, images, descriptions, and results. (20 points)
 - [ ] At least 8 commits per team member (20 points)
