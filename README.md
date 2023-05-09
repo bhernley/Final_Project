@@ -74,6 +74,7 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 
 
 **Segment 2 Requirements:**
+- [ ] Section about different files for results
 - [ ] Detailed README.md that includes project status, images, descriptions, and results. (20 points)
 - [ ] At least 8 commits per team member (20 points)
 - [ ] Machine learning model, confusion matrix/accuracy score (20)
