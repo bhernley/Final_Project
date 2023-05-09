@@ -219,7 +219,7 @@ From diabetes_sample;
 
 SELECT * FROM age_group_table;
 
--- joining all numerical tables into 1 table
+-- joining all numerical tables into 1 final table
 
 SELECT gender_numeric_table.patient_no, gender_numeric, age_range, hypertension_numeric, heart_disease_numeric, smoking_history_numeric, bmi, hba1c_level, blood_glucose_level, diabetes_numeric
 FROM gender_numeric_table
@@ -232,3 +232,133 @@ JOIN hba1c_level_table ON gender_numeric_table.patient_no = hba1c_level_table.pa
 JOIN blood_glucose_level_table ON gender_numeric_table.patient_no = blood_glucose_level_table.patient_no
 JOIN diabetes_numeric_table ON gender_numeric_table.patient_no = diabetes_numeric_table.patient_no
 ;
+
+
+-- ***********************************************************************
+-- running figures for cleaned dataset
+
+-- group by age count
+SELECT
+	CASE
+		WHEN age < 18 THEN 'Under 18'
+		WHEN age BETWEEN 18 AND 25 THEN '18-25'
+		WHEN age BETWEEN 26 AND 35 THEN '26-35'
+		WHEN age BETWEEN 36 AND 45 THEN '36-45'
+		WHEN age BETWEEN 46 AND 55 THEN '46-55'
+		ELSE '55+'
+	END AS age_range,
+	COUNT(*) AS count
+From clean_dataset
+GROUP BY age_range
+ORDER BY age_range;
+
+-- numeric conversions of columns
+
+	-- converting gender into numeric value table
+CREATE TABLE gender_numeric_cleantable AS
+SELECT patient_no,
+	CASE
+		WHEN gender = 'Male' THEN 1
+		ELSE 0
+	END AS gender_numeric 
+FROM clean_dataset;
+
+SELECT * FROM gender_numeric_cleantable;
+
+
+	-- converting hypertension into numeric value table
+CREATE TABLE hypertension_numeric_cleantable AS
+SELECT patient_no,
+	CASE
+		WHEN hypertension = 'true' THEN 1
+		ELSE 0
+	END AS hypertension_numeric 
+FROM clean_dataset;
+
+SELECT * FROM hypertension_numeric_cleantable;
+
+	-- 	converting hear disease into numeric value table
+CREATE TABLE heart_disease_numeric_cleantable AS
+SELECT patient_no,
+	CASE
+		WHEN heart_disease = 'true' THEN 1
+		ELSE 0
+	END AS heart_disease_numeric 
+FROM clean_dataset;
+
+SELECT * FROM heart_disease_numeric_cleantable;
+
+	-- 	converting smoking history into numeric value table
+CREATE TABLE smoking_history_numeric_cleantable AS
+SELECT patient_no,
+	CASE
+		WHEN have_ever_smoked = 'true' THEN 1
+		ELSE 0
+	END AS smoking_history_numeric 
+FROM clean_dataset;
+
+SELECT * FROM smoking_history_numeric_cleantable;
+
+	-- 	converting diabetes into numeric value table
+CREATE TABLE diabetes_numeric_cleantable AS
+SELECT patient_no,
+	CASE
+		WHEN diabetes = 'true' THEN 1
+		ELSE 0
+	END AS diabetes_numeric 
+FROM clean_dataset;
+
+SELECT * FROM diabetes_numeric_cleantable;
+
+-- separating remaining columns into their own tables
+CREATE TABLE age_numeric_cleantable AS
+SELECT patient_no, age
+FROM clean_dataset;
+
+CREATE TABLE bmi_cleantable AS
+SELECT patient_no, bmi
+FROM clean_dataset;
+
+CREATE TABLE hba1c_level_cleantable AS
+SELECT patient_no, hba1c_level
+FROM clean_dataset;
+
+CREATE TABLE blood_glucose_level_cleantable AS
+SELECT patient_no, blood_glucose_level
+FROM clean_dataset;
+
+SELECT * FROM age_numeric_cleantable;
+SELECT * FROM bmi_cleantable;
+SELECT * FROM hba1c_level_cleantable;
+SELECT * FROM blood_glucose_level_cleantable;
+
+-- need to creat an age group table to jOIN
+CREATE TABLE age_group_cleantable AS
+SELECT patient_no,
+	CASE
+		WHEN age < 18 THEN 0
+		WHEN age BETWEEN 18 AND 25 THEN 1
+		WHEN age BETWEEN 26 AND 35 THEN 2
+		WHEN age BETWEEN 36 AND 45 THEN 3
+		WHEN age BETWEEN 46 AND 55 THEN 4
+		ELSE 5
+	END AS age_range
+From clean_dataset;
+
+SELECT * FROM age_group_cleantable;
+
+-- joining all numerical tables into 1 final table
+CREATE TABLE Final_Dataset AS 
+SELECT gender_numeric_cleantable.patient_no, gender_numeric, age_range, hypertension_numeric, heart_disease_numeric, smoking_history_numeric, bmi, hba1c_level, blood_glucose_level, diabetes_numeric
+FROM gender_numeric_cleantable
+JOIN age_group_cleantable ON gender_numeric_cleantable.patient_no = age_group_cleantable.patient_no
+JOIN hypertension_numeric_cleantable ON gender_numeric_cleantable.patient_no = hypertension_numeric_cleantable.patient_no
+JOIN heart_disease_numeric_cleantable ON gender_numeric_cleantable.patient_no = heart_disease_numeric_cleantable.patient_no
+JOIN smoking_history_numeric_cleantable ON gender_numeric_cleantable.patient_no = smoking_history_numeric_cleantable.patient_no
+JOIN bmi_cleantable ON gender_numeric_cleantable.patient_no =bmi_cleantable.patient_no
+JOIN hba1c_level_cleantable ON gender_numeric_cleantable.patient_no = hba1c_level_cleantable.patient_no
+JOIN blood_glucose_level_cleantable ON gender_numeric_cleantable.patient_no = blood_glucose_level_cleantable.patient_no
+JOIN diabetes_numeric_cleantable ON gender_numeric_cleantable.patient_no = diabetes_numeric_cleantable.patient_no
+;
+
+SELECT * FROM Final_Dataset;
