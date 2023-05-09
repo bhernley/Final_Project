@@ -361,4 +361,5 @@ JOIN blood_glucose_level_cleantable ON gender_numeric_cleantable.patient_no = bl
 JOIN diabetes_numeric_cleantable ON gender_numeric_cleantable.patient_no = diabetes_numeric_cleantable.patient_no
 ;
 
+
 SELECT * FROM Final_Dataset;
