@@ -23,9 +23,22 @@ The diabetic_numeric is 0 & 1, with 0 being no diabetes and 1 being diabetes wit
 
 ![Screenshot 2023-05-08 at 6 12 54 PM](https://user-images.githubusercontent.com/117100491/236956839-489f478d-5011-4b73-8a43-0fd677f2f88e.png)
 
-We can see that the gender breakdown is fairly close, and the diabetes data leans more towards not having it. 
+We can see that the gender breakdown is fairly close for true and disparate for false, and the diabetes data leans more towards not having it. 
 
-As far as age goes, there is a wide... wide breadth of data. There are 101 rows of age data, which we have binned by 10 year marks for analysis.
+As far as age goes, there is a wide... wide breadth of data. There are 101 rows of age data, which we have binned by 10ish year marks for analysis.
+
+![Screenshot 2023-05-08 at 7 13 37 PM](https://user-images.githubusercontent.com/117100491/236962988-76275d00-fc84-409e-a794-f67893aeec2a.png)
+
+Binned Age Ranges:
+0 = <18
+1 = 18-25
+2 = 26-35
+3 = 36-45
+4 = 46-55
+5 = 56 +
+
+![Screenshot 2023-05-08 at 7 17 05 PM](https://user-images.githubusercontent.com/117100491/236963317-1a657f5a-c834-40a3-bc76-4c8867eaa995.png)
+
 
 ## Question to be answered: 
 If you have more of the factors, are you more likely to have diabetes?
