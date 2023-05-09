@@ -32,12 +32,12 @@ As far as age goes, there is a wide... wide breadth of data. There are 101 rows 
 ![Screenshot 2023-05-08 at 8 00 04 PM](https://user-images.githubusercontent.com/117100491/236967746-aea81f3d-10e2-466c-a662-8360a30fca78.png)
 
 Binned Age Range:
-- 0. <18
-- 1. 19-25
-- 2. 26-35
-- 3. 36-45
-- 4. 46-55
-- 5. 56+
+ 0. <18
+ 1. 19-25
+ 2. 26-35
+ 3. 36-45
+ 4. 46-55
+ 5. 56+
 
 ## Question to be answered: 
 If you have more of the factors, are you more likely to have diabetes?
