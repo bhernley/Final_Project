@@ -1,4 +1,4 @@
-"patient_no","gender_numeric","age_range","hypertension_numeric","heart_disease_numeric","smoking_history_numeric","bmi","hba1c_level","blood_glucose_level","diabetes_numeric"
+"patient_no","gender","age_range","hypertension","heart_disease","smoking_history","bmi","hba1c_level","blood_glucose_level","diabetes"
 1,0,5,0,1,0,25.19,6.6,140,0
 3,1,2,0,0,0,27.32,5.7,158,0
 4,0,3,0,0,1,23.45,5.0,155,0

@@ -363,3 +363,122 @@ JOIN diabetes_numeric_cleantable ON gender_numeric_cleantable.patient_no = diabe
 
 
 SELECT * FROM Final_Dataset;
+
+-- cleaning up column names
+ALTER TABLE Final_Dataset
+RENAME COLUMN gender_numeric TO gender,
+RENAME COLUMN hypertension_numeric TO hypertension,
+RENAME COLUMN heart_disease_numeric TO heart_disease,
+RENAME COLUMN smoking_history_numeric TO smoking_history, 
+RENAME COLUMN diabetes_numeric TO diabetes;
+-- export CSV as final_dataset
+
+-- ***********************************
+-- counts
+
+
+-- count of gender
+SELECT
+	CASE
+		WHEN gender = 1 THEN 'Male'
+		ELSE 'Female'
+	END AS gender,
+	COUNT(*) AS count
+From Final_Dataset
+GROUP BY gender
+ORDER BY gender;
+
+-- count of Hypertension
+SELECT
+	CASE
+		WHEN hypertension = 1 THEN 'Positive for Hypertension'
+		ELSE 'Negative for Hypertension'
+	END AS hypertension,
+	COUNT(*) AS count
+From Final_Dataset
+GROUP BY hypertension
+ORDER BY hypertension;
+
+-- Count for Heart Disease
+SELECT
+	CASE
+		WHEN heart_disease = 1 THEN 'Positive for Heart Disease'
+		ELSE 'Negative for Heart Disease'
+	END AS heart_disease,
+	COUNT(*) AS count
+From Final_Dataset
+GROUP BY heart_disease
+ORDER BY heart_disease;
+
+-- Count of Smoking History
+SELECT
+	CASE
+		WHEN smoking_history = 1 THEN 'Positive for Smoking History'
+		ELSE 'Negative for Smoking History'
+	END AS smoking_history,
+	COUNT(*) AS count
+From Final_Dataset
+GROUP BY smoking_history
+ORDER BY smoking_history;
+
+
+-- BMI count per CDC categories
+SELECT
+	CASE
+		WHEN bmi < 18.5 THEN 'Underweight'
+		WHEN bmi BETWEEN 18.5 AND 25 THEN 'Healthy Weight'
+		WHEN bmi BETWEEN 25 AND 30 THEN 'Overweight'
+		WHEN bmi > 30.00 THEN 'Obese Total Count'
+	END AS bmi_range,
+	COUNT(*) AS count
+From Final_Dataset
+GROUP BY bmi_range
+;
+
+SELECT
+	CASE
+		WHEN bmi BETWEEN 30 AND 35 THEN 'Obese Class 1'
+		WHEN bmi BETWEEN 35 AND 40 THEN 'Obese Class 2'
+		WHEN bmi > 40 THEN 'Obese Class 3'
+		ELSE 'NON-Obese Range'
+	END AS obese_class,
+	COUNT(*) AS count
+From Final_Dataset
+GROUP BY obese_class
+;
+
+-- count hba1c level groups per CDC
+SELECT
+	CASE
+		WHEN hba1c_level < 5.7 THEN 'Normal'
+		WHEN hba1c_level BETWEEN 5.7 AND 6.4 THEN 'Prediabetes'
+		ELSE 'Diabetes'
+	END AS hba1c_level_range,
+	COUNT(*) AS count
+From Final_Dataset
+GROUP BY hba1c_level_range
+;
+
+-- count for blood glucose level groups per CDC 
+-- ***** glucose tests require multiple controlled tests, our dataset doesn't specify which kind of glucose test was completed
+-- SELECT
+-- 	CASE
+-- 		WHEN blood_glucose_level < 140 THEN 'Normal'
+-- 		WHEN blood_glucose_level BETWEEN 140 AND 200 THEN 'Prediabetes'
+-- 		ELSE 'Diabetes'
+-- 	END AS blood_glucose_range,
+-- 	COUNT(*) AS count
+-- From Final_Dataset
+-- GROUP BY blood_glucose_range
+-- ;
+
+-- Diabetes Count
+SELECT
+	CASE
+		WHEN diabetes = 1 THEN 'Positive for Diabetes'
+		ELSE 'Negative for Diabetes'
+	END AS diabetes,
+	COUNT(*) AS count
+From Final_Dataset
+GROUP BY diabetes
+ORDER BY diabetes;
