@@ -8,7 +8,7 @@
 ## Project Topic:
 For our project, we are analyzing a dataset from Kaggle about Diabetes and other health risks of certain individuals. This dataset highlights a certain amount of the population and their health information revolving around whether or not they have diabetes. With certain scientific diagnoses identified as possible contributers to diabetes, we wanted to dive into the many factors that may or may not contribute to diabetes. We don't have the specifics on which type of diabetes (1 or 2), but we do know that overall, Type 2 diabetes is on the rise worldwide with obesity and physical inactivity as the leading causes [^1]. Type 1 diabetes is related to genetics and environmental factors. The dataset expresses different demographic and medical features such as BMI, age & gender, hypertension, heart disease, smoking history, blood glucose levels, etc. - its safe to assume that we are working closer to Type 2 diabetes. This can be a great way to test possible causation of different risk factors upon diabetes diagnoses.
 ## Dataset Info:
-The dataset is a collection of EHRs (Electronic Health Records) sourced from different healthcare providers as part of their clinical practices. EHRs are a great way to analyze patient health records and can be used progressively along the life of the patient. The dataset was sourced from Kaggle, licensed by the original author,[Mohammed Mustafa](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset). The dataset was collected from patients on a random scale from surveys, medical records, and lab tests. It has been pre-processed, and processed farther by this team, leaving the dataset with 11 columns and 14,092 rows turned into integers where necessary for MachineLearning analysis.
+The dataset is a collection of EHRs (Electronic Health Records) sourced from different healthcare providers as part of their clinical practices. EHRs are a great way to analyze patient health records and can be used progressively along the life of the patient. The dataset was sourced from Kaggle, licensed by the original author,[Mohammed Mustafa](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset). The dataset was collected from patients on a random scale from surveys, medical records, and lab tests. It has been pre-processed, and processed farther by this team, leaving the dataset with 11 columns and ~64,000 rows turned into integers where necessary for MachineLearning analysis.
 
 
 <img width="737" alt="Screenshot 2023-05-08 at 5 52 26 PM" src="https://user-images.githubusercontent.com/117100491/236954421-e62f2e19-c026-475a-b8af-07085cfd35e9.png">
@@ -22,15 +22,16 @@ The above image illustrates our final database, transformed into numeric data by
 The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
 The diabetic_numeric is 0 & 1, with 0 being no diabetes and 1 being diabetes with the data 
 
-![Screenshot 2023-05-08 at 7 57 51 PM](https://user-images.githubusercontent.com/117100491/236967518-9cb86bf8-1d4d-49bb-8a3c-d6098b0b161f.png)
-
 For the gender_numeric, 0 is female and 1 is male.
+
+<img width="422" alt="Screenshot 2023-05-10 at 5 19 50 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/96729db9-9401-4260-b70c-958ff89917b3">
 
 We can see that the gender breakdown is fairly close.
 
 As far as age goes, there is a wide... wide breadth of data. There are 101 rows of age data, which we have binned by 10 year marks for analysis.
 
-![Screenshot 2023-05-08 at 8 00 04 PM](https://user-images.githubusercontent.com/117100491/236967746-aea81f3d-10e2-466c-a662-8360a30fca78.png)
+<img width="133" alt="Screenshot 2023-05-10 at 5 19 35 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/5be977d5-2d3c-441c-aa96-6dfc84b39947">
+
 
 
 ## Question to be answered: 
@@ -44,6 +45,12 @@ How do the features given affect the output (diabetes diagnoses)?
   - Can they be linked?
   - Does age play a role? 
   - Does gender play a role? Answered below
+## Findings:
+
+We've found that the GradientTree MachineLearning model gives us the best output resulting in a 96% accuracy rating after using the GradientBoostingClassifer.
+
+<img width="507" alt="Screenshot 2023-05-10 at 5 34 13 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/9e6717af-3e5b-4dd4-b0e0-770963bd48e4">
+
 
 ## Links:
 Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN18IX1v0AwdYgSdBLA/edit?usp=sharing
@@ -72,9 +79,9 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 - [ ] Need to fix table issues recorded in grade review - README.md has been updated as mentioned in review
 
 **Segment 2 Requirements:**
-- [ ] Detailed README.md that includes project status, images, descriptions, and results. (20 points)
-- [ ] At least 8 commits per team member (20 points)
-- [ ] Machine learning model, confusion matrix/accuracy score (20)
+- [X] Detailed README.md that includes project status, images, descriptions, and results. (20 points)
+- [X] At least 8 commits per team member (20 points)
+- [X] Machine learning model, confusion matrix/accuracy score (20)
 - [ ] Database that stores data from the project with at least two tables or collections (20)
 - [ ] Selected topic and reasoning for the selection
 - [ ] Description of data
