@@ -63,7 +63,7 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 ### Current Team Processes:
 - Bradley has created a clean data set through Python coding and SQL database/tables.
 - Laine has placed the CSV in MachineLearning - She has built out Logistical Regression, Random Forest Classifier, Random Over Sampling, Decision Tree, and Gradient Tree, and is working on explaining her finding. BUT we have an accuracy upwards of 95% with every MachineLearning model! She has made some basic python .groupbys to give a quick glance at the makeup of the dataset as we move forward.
-- Christopher is working on Tableau visualization/interactive dashboard showcasing the likelihood of diabetes based on factors generally, and more specifically seeking highly correlative factors not just for patients with diabetes but additional physiological or lifestyle features highlighted in this data set.
+- Christopher is working on Tableau visualization/interactive dashboard showcasing the likelihood of diabetes based on factors generally, and more specifically seeking highly correlative factors not just for patients with diabetes but additional physiological or lifestyle features highlighted in this data set. Further recording and ultimately reporting with comment from team on the data analysis and exploration experience and what we learned as we worked through the data assessment, cleaning, and learning process.
 ## Technologies:
 - Jupyter Notebook/Python/Pandas/Numpy
 - SQL/PgAdmin/Postgres
