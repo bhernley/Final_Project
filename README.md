@@ -19,7 +19,7 @@ The above image shows the original data as we received it with categories hypert
 The above image illustrates our final database. The data was first cleaned by giving each patient was given a unique identifier as a "patient_no", as well has removing rows with missing information. Smoking history responses were also coverted to a yes/no format for any level of smoking history. The remainder of the columns were converted into numeric data in order to complete the MachineLearning protocols. 
 The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
 
-- Values of 1 equate to true/positive, and values of 2 equate to false/negative 
+- Values of 1 equate to true/positive, and values of 0 equate to false/negative 
 - For the "gender" column, 0 is female and 1 is male.
 
 ![Gender_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/8390c6d9-4408-419c-b1b9-0e04bf10c0da)
