@@ -14,30 +14,28 @@ The dataset is a collection of EHRs (Electronic Health Records) sourced from dif
 
 The above image shows the original data we pulled with categories hypertension, heart_disease, smoking_history and diabetes being transfered to true/false.
 
-<img width="779" alt="Screenshot 2023-05-08 at 5 54 06 PM" src="https://user-images.githubusercontent.com/117100491/236954628-3264b41b-f271-4a09-9419-11bf874b55e2.png">
-
+![final dataset sample](https://github.com/bhernley/Final_Project/assets/119247984/c084cebf-5682-42a1-943a-94c0da90a86b)
 
 The above image illustrates our final database, transformed into numeric data by the lovely Bradley Henley in order to complete MachineLearning protocols.
 The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
 The diabetic_numeric is 0 & 1, with 0 being no diabetes and 1 being diabetes with the data 
 
-![Screenshot 2023-05-08 at 7 57 51 PM](https://user-images.githubusercontent.com/117100491/236967518-9cb86bf8-1d4d-49bb-8a3c-d6098b0b161f.png)
-
-For the gender_numeric, 0 is female and 1 is male.
+![Gender_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/b31b34c8-44bd-4d56-a6ef-cc84f1065987)
 
 We can see that the gender breakdown is fairly close.
 
 As far as age goes, there is a wide... wide breadth of data. There are 101 rows of age data, which we have binned by 10 year marks for analysis.
 
-![Screenshot 2023-05-08 at 8 00 04 PM](https://user-images.githubusercontent.com/117100491/236967746-aea81f3d-10e2-466c-a662-8360a30fca78.png)
+![Age_Group_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/1f802cef-415c-44d8-a06c-914316bfba14)
 
-Binned Age Range:
- 0. <18
- 1. 19-25
- 2. 26-35
- 3. 36-45
- 4. 46-55
- 5. 56+
+Binned Age Range Reference Number:
+
+ - 0 = 0 <18
+ - 1 = 19-25
+ - 2 = 26-35
+ - 3 = 36-45
+- 4 = 46-55
+ - 5 = Greater than 55
 
 ## Question to be answered: 
 If you have more of the factors, are you more likely to have diabetes?
