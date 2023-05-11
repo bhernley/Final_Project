@@ -10,27 +10,26 @@ For our project, we are analyzing a dataset from Kaggle about Diabetes and other
 ## Dataset Info:
 The dataset is a collection of EHRs (Electronic Health Records) sourced from different healthcare providers as part of their clinical practices. EHRs are a great way to analyze patient health records and can be used progressively along the life of the patient. The dataset was sourced from Kaggle, licensed by the original author,[Mohammed Mustafa](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset). The dataset was collected from patients on a random scale from surveys, medical records, and lab tests. It has been pre-processed, and processed farther by this team, leaving the dataset with 11 columns and ~64,000 rows turned into integers where necessary for MachineLearning analysis.
 
+![Original Dataset Example](https://github.com/bhernley/Final_Project/assets/119247984/d58bfa09-6e91-4dd7-9cc8-ccbff3249015)
 
-<img width="737" alt="Screenshot 2023-05-08 at 5 52 26 PM" src="https://user-images.githubusercontent.com/117100491/236954421-e62f2e19-c026-475a-b8af-07085cfd35e9.png">
+The above image shows the original data as we received it with categories hypertension, heart_disease, smoking_history and diabetes.
 
-The above image shows the original data we pulled with categories hypertension, heart_disease, smoking_history and diabetes being transfered to true/false.
+![final dataset sample](https://github.com/bhernley/Final_Project/assets/119247984/4765572d-75d4-4e5e-be2c-c33b7ae9ba76)
 
-<img width="779" alt="Screenshot 2023-05-08 at 5 54 06 PM" src="https://user-images.githubusercontent.com/117100491/236954628-3264b41b-f271-4a09-9419-11bf874b55e2.png">
-
-
-The above image illustrates our final database, transformed into numeric data by the lovely Bradley Henley in order to complete MachineLearning protocols.
+The above image illustrates our final database.  The data each patient was given a unique identifier as a "patient_no". The remainder of the columns were converted into numeric data in order to complete the MachineLearning protocols.
 The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
-The diabetic_numeric is 0 & 1, with 0 being no diabetes and 1 being diabetes with the data 
 
-For the gender_numeric, 0 is female and 1 is male.
+- Values of 1 equate to true/positive, and values of 2 equate to false/negative 
+- For the "gender" column, 0 is female and 1 is male.
 
-<img width="422" alt="Screenshot 2023-05-10 at 5 19 50 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/96729db9-9401-4260-b70c-958ff89917b3">
+![Gender_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/8390c6d9-4408-419c-b1b9-0e04bf10c0da)
 
 We can see that the gender breakdown is fairly close.
 
+![Age_Group_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/87387965-56eb-4d4a-96a3-98d7c01ca6a8)
+
 As far as age goes, there is a wide... wide breadth of data. There are 101 rows of age data, which we have binned by 10 year marks for analysis.
 
-<img width="133" alt="Screenshot 2023-05-10 at 5 19 35 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/5be977d5-2d3c-441c-aa96-6dfc84b39947">
 
 
 ## Question to be answered: 
