@@ -33,7 +33,6 @@ As far as age goes, there is a wide... wide breadth of data. There are 101 rows 
 <img width="133" alt="Screenshot 2023-05-10 at 5 19 35 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/5be977d5-2d3c-441c-aa96-6dfc84b39947">
 
 
-
 ## Question to be answered: 
 If you have more of the factors, are you more likely to have diabetes?
   - Can this be proven by the data?
@@ -44,10 +43,10 @@ How do the features given affect the output (diabetes diagnoses)?
   - Does a mix of features impact?
   - Can they be linked?
   - Does age play a role? 
-  - Does gender play a role? Answered below
+  - Does gender play a role?
 ## Findings:
 
-We've found that the GradientTree MachineLearning model gives us the best output resulting in a 96% accuracy rating after using the GradientBoostingClassifer.
+We've found that the GradientTree MachineLearning model gives us the best output resulting in a 96% accuracy rating after using the GradientBoostingClassifer. We decided to use the GradientTree MachineLearning since our output was so successful, and we did not need Neural Network to support.
 
 <img width="507" alt="Screenshot 2023-05-10 at 5 34 13 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/9e6717af-3e5b-4dd4-b0e0-770963bd48e4">
 
