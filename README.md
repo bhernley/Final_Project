@@ -16,7 +16,7 @@ The above image shows the original data as we received it with categories hypert
 
 ![final dataset sample](https://github.com/bhernley/Final_Project/assets/119247984/4765572d-75d4-4e5e-be2c-c33b7ae9ba76)
 
-The above image illustrates our final database.  The data each patient was given a unique identifier as a "patient_no". The remainder of the columns were converted into numeric data in order to complete the MachineLearning protocols.
+The above image illustrates our final database. The data was first cleaned by giving each patient was given a unique identifier as a "patient_no", as well has removing rows with missing information. Smoking history responses were also coverted to a yes/no format for any level of smoking history. The remainder of the columns were converted into numeric data in order to complete the MachineLearning protocols. 
 The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
 
 - Values of 1 equate to true/positive, and values of 2 equate to false/negative 
@@ -100,13 +100,13 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 - [X] Detailed README.md that includes project status, images, descriptions, and results. (20 points)
 - [X] At least 8 commits per team member (20 points)
 - [X] Machine learning model, confusion matrix/accuracy score (20)
-- [ ] Database that stores data from the project with at least two tables or collections (20)
+- [X] Database that stores data from the project with at least two tables or collections (20)
 - [ ] Selected topic and reasoning for the selection
-- [ ] Description of data
+- [X] Description of data
 - [ ] Questions planned to answer
 - [ ] Description of the data exploration phase
 - [ ] Description of the analysis phase
-- [ ] Technologies, languages, tools, and algorithms that the team used.
+- [X] Technologies, languages, tools, and algorithms that the team used.
 
 
 [^1]: [https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes#:~:text=Overweight%2C%20obesity%2C%20and%20physical%20inactivity,people%20with%20type%202%20diabetes.]
