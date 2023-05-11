@@ -362,7 +362,22 @@ JOIN diabetes_numeric_cleantable ON gender_numeric_cleantable.patient_no = diabe
 ;
 
 
-SELECT * FROM Final_Dataset;
+-- joining all numerical tables into 1 final table
+CREATE TABLE Final_Dataset_2 AS 
+SELECT gender_numeric_cleantable.patient_no, gender_numeric, age, age_range, hypertension_numeric, heart_disease_numeric, smoking_history_numeric, bmi, hba1c_level, blood_glucose_level, diabetes_numeric
+FROM gender_numeric_cleantable
+JOIN age_group_cleantable ON gender_numeric_cleantable.patient_no = age_group_cleantable.patient_no
+JOIN hypertension_numeric_cleantable ON gender_numeric_cleantable.patient_no = hypertension_numeric_cleantable.patient_no
+JOIN heart_disease_numeric_cleantable ON gender_numeric_cleantable.patient_no = heart_disease_numeric_cleantable.patient_no
+JOIN smoking_history_numeric_cleantable ON gender_numeric_cleantable.patient_no = smoking_history_numeric_cleantable.patient_no
+JOIN bmi_cleantable ON gender_numeric_cleantable.patient_no =bmi_cleantable.patient_no
+JOIN hba1c_level_cleantable ON gender_numeric_cleantable.patient_no = hba1c_level_cleantable.patient_no
+JOIN blood_glucose_level_cleantable ON gender_numeric_cleantable.patient_no = blood_glucose_level_cleantable.patient_no
+JOIN diabetes_numeric_cleantable ON gender_numeric_cleantable.patient_no = diabetes_numeric_cleantable.patient_no
+JOIN age_numeric_cleantable ON gender_numeric_cleantable.patient_no = gender_numeric_cleantable.patient_no
+;
+
+SELECT * FROM Final_Dataset_2;
 
 -- cleaning up column names
 ALTER TABLE Final_Dataset
