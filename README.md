@@ -20,13 +20,13 @@ The above image illustrates our final database, transformed into numeric data by
 The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
 The diabetic_numeric is 0 & 1, with 0 being no diabetes and 1 being diabetes with the data 
 
-![Gender_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/b31b34c8-44bd-4d56-a6ef-cc84f1065987)
+![Gender_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/7ca09c89-eb9f-4bb9-8a36-caffc40d7da5)
 
 We can see that the gender breakdown is fairly close.
 
 As far as age goes, there is a wide... wide breadth of data. There are 101 rows of age data, which we have binned by 10 year marks for analysis.
 
-![Age_Group_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/1f802cef-415c-44d8-a06c-914316bfba14)
+![Age_Group_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/307a4bb5-c7d1-4fac-85a0-ffd25b53da33)
 
 Binned Age Range Reference Number:
 
