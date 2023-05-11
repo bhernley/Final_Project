@@ -19,7 +19,7 @@ The above image shows the original data as we received it with categories hypert
 The above image illustrates our final database. The data was first cleaned by giving each patient was given a unique identifier as a "patient_no", as well has removing rows with missing information. Smoking history responses were also coverted to a yes/no format for any level of smoking history. The remainder of the columns were converted into numeric data in order to complete the MachineLearning protocols. 
 The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
 
-- Values of 1 equate to true/positive, and values of 2 equate to false/negative 
+- Values of 1 equate to true/positive, and values of 0 equate to false/negative 
 - For the "gender" column, 0 is female and 1 is male.
 
 ![Gender_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/8390c6d9-4408-419c-b1b9-0e04bf10c0da)
@@ -33,15 +33,16 @@ As far as age goes, there is a wide... wide breadth of data. There are 101 rows 
 
 
 ## Question to be answered: 
-If you have more of the factors, are you more likely to have diabetes?
-  - Can this be proven by the data?
+If one is positive for more factors featured in this data set, is one more likely to test positive for diabetes?
+  - Yes - how can this be indicated by the data and to what degree?
 
-Is there a discernable difference if the patient has a smoking_history?
+Is there a discernable difference if the patient has a history of high blood sugar, BMI, smoking, etc.?
+  - Acknowledged. See (final) images.
 
-How do the features given affect the output (diabetes diagnoses)?
-  - Does a mix of features impact?
-  - Can they be linked?
-  - Does age play a role? 
+How do the features given affect a likely outcome of positive diabetes diagnosis?
+  - Will a mix of features correlate in an identifiable and way?
+  - Can such features be linked with this data?
+  - How does age impact a likely diagnosis
   - Does gender play a role?
 ## Findings:
 
@@ -108,7 +109,19 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 - [ ] Description of the analysis phase
 - [X] Technologies, languages, tools, and algorithms that the team used.
 
+Visualisation Components Under Construction - Plan to show fundamental correlations among data set population and present notable standout correlative indicators for Diabetes and/or physical/behavioral norms.  Below are snips from the current dash:
+
+![Data set raw counts +/-](Set%20Raw%20Count.PNG)
+
+![BG & BMI Pos D](BG%20&%20BMI%20Positive%20D.PNG)
+
+![BG & BMI Neg D](BG%20&%20BMI%20Negative%20D.PNG)
+
+![Avg BG & BMI for Pos & Neg D](Avg%20BG%20&%20BMI%20for%20Pos%20&%20Neg%20D.PNG)
+
+![Avg BG for Pos & Neg D](Avg%20Blood%20Glucose%20PosNeg.PNG)
+
+The above is for further discussion regarding priorities, thematics, and order - inclusive of more images covering more correlative standards and anomalies.
 
 [^1]: [https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes#:~:text=Overweight%2C%20obesity%2C%20and%20physical%20inactivity,people%20with%20type%202%20diabetes.]
 
-![Data set raw counts +/-](Set%20Raw%20Count.PNG)
