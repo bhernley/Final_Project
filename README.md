@@ -49,6 +49,26 @@ We've found that the GradientTree MachineLearning model gives us the best output
 
 <img width="507" alt="Screenshot 2023-05-10 at 5 34 13 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/9e6717af-3e5b-4dd4-b0e0-770963bd48e4">
 
+We trained the model with a train_test_split twice, moving into the StandardScaler instance and using the Decision Tree Classifier, confusion matrix and accuracy score, the results were less than optimal.
+
+![Screenshot 2023-05-10 at 7 28 57 PM](https://github.com/bhernley/Final_Project/assets/117100491/28af2106-62d0-4a39-a4c0-786f04127a41)
+
+Then, we trained the Random Forest Classifier coding with the confusion matrix and accuracy score with the classification report. This gave us a very good outcome, but recall is a less than optimal.
+
+![Screenshot 2023-05-10 at 7 31 45 PM](https://github.com/bhernley/Final_Project/assets/117100491/4a09bfc3-95e3-45e1-ac2b-aad16b26d605)
+
+Then we sorted the importance of the features.
+
+![Screenshot 2023-05-10 at 7 32 59 PM](https://github.com/bhernley/Final_Project/assets/117100491/575b9d61-3d41-4f73-ae27-4136f7c3d134)
+
+The results show that hba1c_levels and blood_glucose_levels, both blood sugar factors, are particularly important. 
+
+Then we coded the Gradient Boosting Classifier from the sklearn ensemble, fitting the model to a classifier and accuracy.
+
+![Screenshot 2023-05-10 at 7 35 32 PM](https://github.com/bhernley/Final_Project/assets/117100491/7728ba47-e006-445b-97df-31d7e84e142b)
+
+Finally, we moved into the Gradient Boosting Classifier to predict the actual data. Resulting in with a precision score of 96/98, recall of 100/70, anf fl-score of 98/82 which was by far our best outcome.
+
 
 ## Links:
 Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN18IX1v0AwdYgSdBLA/edit?usp=sharing
