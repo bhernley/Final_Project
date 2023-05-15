@@ -16,8 +16,7 @@ The above image shows the original data as we received it with categories hypert
 
 ![final dataset sample](https://github.com/bhernley/Final_Project/assets/119247984/4765572d-75d4-4e5e-be2c-c33b7ae9ba76)
 
-The above image illustrates our final database. The data was first cleaned by giving each patient was given a unique identifier as a "patient_no", as well has removing rows with missing information. Smoking history responses were also coverted to a yes/no format for any level of smoking history. The remainder of the columns were converted into numeric data in order to complete the MachineLearning protocols. 
-The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
+The above image illustrates our final database. 
 
 - Values of 1 equate to true/positive, and values of 0 equate to false/negative 
 - For the "gender" column, 0 is female and 1 is male.
@@ -29,8 +28,6 @@ We can see that the gender breakdown is fairly close.
 ![Age_Group_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/87387965-56eb-4d4a-96a3-98d7c01ca6a8)
 
 As far as age goes, there is a wide... wide breadth of data. There are 101 rows of age data, which we have binned by 10 year marks for analysis.
-
-
 
 ## Question to be answered: 
 If one is positive for more factors featured in this data set, is one more likely to test positive for diabetes?
@@ -44,9 +41,22 @@ How do the features given affect a likely outcome of positive diabetes diagnosis
   - Can such features be linked with this data?
   - How does age impact a likely diagnosis
   - Does gender play a role?
-## Findings:
+## Data Exploration & Findings:
 
-We've found that the GradientTree MachineLearning model gives us the best output resulting in a 96% accuracy rating after using the GradientBoostingClassifer. We decided to use the GradientTree MachineLearning since our output was so successful, and we did not need Neural Network to support.
+After initially pulling the data, we removed all null values while also altering some categorization that did not make sense. For example, the smoking_history category had ever instead of never. The data was first cleaned by giving each patient was given a unique identifier as a "patient_no", as well has removing rows with missing information. Smoking history responses were also coverted to a yes/no format for any level of smoking history.
+The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
+We also bucketed the ages in order to add another analytics aspect based on age. We created numeric data to allow for MachineLearning models to run which were successful.
+
+Binned Age Range:
+ 0. <18
+ 1. 19-25
+ 2. 26-35
+ 3. 36-45
+ 4. 46-55
+ 5. 56+
+
+While we were exploring, we found that the accuracy score was great with the Gradient Tree MachineLearning.
+We've found that the Gradient Tree MachineLearning model gives us the best output resulting in a 96% accuracy rating after using the GradientBoostingClassifer. We decided to use the GradientTree MachineLearning since our output was so successful after trying Decision Tree, Logistical Regression, Random Forest Classifier, and Random OverSampling all with accuracy scores and confusion matrixes.
 
 <img width="507" alt="Screenshot 2023-05-10 at 5 34 13 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/9e6717af-3e5b-4dd4-b0e0-770963bd48e4">
 
@@ -70,6 +80,9 @@ Then we coded the Gradient Boosting Classifier from the sklearn ensemble, fittin
 
 Finally, we moved into the Gradient Boosting Classifier to predict the actual data. Resulting in with a precision score of 96/98, recall of 100/70, anf fl-score of 98/82 which was by far our best outcome.
 
+![Screenshot 2023-05-15 at 5 14 25 PM](https://github.com/bhernley/Final_Project/assets/117100491/003cbf01-cfa6-4c9c-bcfe-27d2343a44b4)
+
+**Above is a basic summary of our findings!**
 
 ## Links:
 Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN18IX1v0AwdYgSdBLA/edit?usp=sharing
@@ -81,7 +94,7 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 - Meeting during class and communicating outside of class to complete each segment and review before Wed night.
 ### Current Team Processes:
 - Bradley has created a clean data set through Python coding and SQL database/tables.
-- Laine has placed the CSV in MachineLearning - She has built out Logistical Regression, Random Forest Classifier, Random Over Sampling, Decision Tree, and Gradient Tree, and is working on explaining her finding. BUT we have an accuracy upwards of 95% with every MachineLearning model! She has made some basic python .groupbys to give a quick glance at the makeup of the dataset as we move forward.
+- Laine has placed the CSV in MachineLearning - She has built out Logistical Regression, Random Forest Classifier, Random Over Sampling, Decision Tree, and Gradient Tree, and is working on explaining her finding. She has made some basic python .groupbys to give a quick glance at the makeup of the dataset as we move forward and has worked on the presentation slides as the data analysis progresses.
 - Christopher is working on Tableau visualization/interactive dashboard showcasing the likelihood of diabetes based on factors generally, and more specifically seeking highly correlative factors not just for patients with diabetes but additional physiological or lifestyle features highlighted in this data set. Further recording and ultimately reporting with comment from team on the data analysis and exploration experience and what we learned as we worked through the data assessment, cleaning, and learning process.
 ## Technologies:
 - Jupyter Notebook/Python/Pandas/Numpy
@@ -95,16 +108,16 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 - Need to communicate Segment needs earlier. Make sure we're all still in the same boat.
 ## Moving Forward:
 **Segment 1 Requirements:**
-- [ ] Need to fix table issues recorded in grade review - README.md has been updated as mentioned in review
+- [X] Need to fix table issues recorded in grade review - README.md has been updated as mentioned in review
 
 **Segment 2 Requirements:**
 - [X] Detailed README.md that includes project status, images, descriptions, and results. (20 points)
 - [X] At least 8 commits per team member (20 points)
 - [X] Machine learning model, confusion matrix/accuracy score (20)
 - [X] Database that stores data from the project with at least two tables or collections (20)
-- [ ] Selected topic and reasoning for the selection
+- [X] Selected topic and reasoning for the selection
 - [X] Description of data
-- [ ] Questions planned to answer
+- [X] Questions planned to answer
 - [ ] Description of the data exploration phase
 - [ ] Description of the analysis phase
 - [X] Technologies, languages, tools, and algorithms that the team used.
