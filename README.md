@@ -47,7 +47,7 @@ How do the features given affect a likely outcome of positive diabetes diagnosis
   - How does age impact a likely diagnosis
   - Does gender play a role?
 ## Data Exploration & Findings:
-
+### DataBase Management:
 After initially pulling the data, we removed all null values while also altering some categorization that did not make sense. For example, the smoking_history category had ever instead of never. The data was first cleaned by giving each patient was given a unique identifier as a "patient_no", as well has removing rows with missing information. Smoking history responses were also coverted to a yes/no format for any level of smoking history.
 The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
 We also bucketed the ages in order to add another analytics aspect based on age. We created numeric data to allow for MachineLearning models to run which were successful.
@@ -60,6 +60,8 @@ Binned Age Range:
  3= 36-45
  4= 46-55
  5= 56+
+ 
+### MachineLearning Management:
 
 While we were exploring, we found that the accuracy score was great with the Gradient Tree MachineLearning.
 We've found that the Gradient Tree MachineLearning model gives us the best output resulting in a 96% accuracy rating after using the GradientBoostingClassifer. We decided to use the GradientTree MachineLearning since our output was so successful after trying Decision Tree, Logistical Regression, Random Forest Classifier, and Random OverSampling all with accuracy scores and confusion matrixes.
@@ -74,6 +76,10 @@ Then we coded the Gradient Boosting Classifier from the sklearn ensemble, fittin
 Finally, we moved into the Gradient Boosting Classifier to predict the actual data. Resulting in with a precision score of 96/98, recall of 100/70, anf fl-score of 98/82 which was by far our best outcome.
 
 ![Screenshot 2023-05-15 at 5 14 25 PM](https://github.com/bhernley/Final_Project/assets/117100491/003cbf01-cfa6-4c9c-bcfe-27d2343a44b4)
+
+### Dashboard
+
+CJ
 
 **Above is a basic summary of our findings for MachineLearning!**
 
@@ -101,6 +107,10 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 ## Challenges:
 - Identifying proper MachineLearning language in presentation. 
 - Need to set bring our different pieces together for the charts and slides
+
+## Future Recommendations:
+
+
 ## Moving Forward:
 **Segment 1 Requirements:**
 - [X] Need to fix table issues recorded in grade review - README.md has been updated as mentioned in review
