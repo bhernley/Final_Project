@@ -1,6 +1,13 @@
 
 # Final Project - Diabetes Factors
 
+## Links:
+Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN18IX1v0AwdYgSdBLA/edit?usp=sharing
+
+
+## File Info:
+
+
 ## Members:
 - Bradley
 - Christopher
@@ -82,11 +89,6 @@ Finally, we moved into the Gradient Boosting Classifier to predict the actual da
 CJ
 
 **Above is a basic summary of our findings for MachineLearning!**
-
-## Links:
-Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN18IX1v0AwdYgSdBLA/edit?usp=sharing
-
-## File Info:
 
 ## Communication
 - Communicate through Slack every day concerning progress of personal tasks.
