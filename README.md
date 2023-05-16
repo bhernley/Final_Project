@@ -20,9 +20,9 @@ The dataset is a collection of EHRs (Electronic Health Records) sourced from dif
 The following image shows the original, raw data as we received it with categories hypertension, heart_disease, smoking_history and diabetes.  The dataset originally contained 100k rows of information.
 ![Original Dataset Example](https://github.com/bhernley/Final_Project/assets/119247984/d58bfa09-6e91-4dd7-9cc8-ccbff3249015)
 
-The file was then cleaned removing any null values and adding a unique identifier as "patient_no" in order to further process the dataset.  This left us approximately 64k rows of information. 
+The file was then cleaned removing any null values and adding a unique identifier as "patient_no" in order to further process the dataset.  This left us approximately 64k rows of information and the following ERD 
 
-![cleaned dataset sample](https://github.com/bhernley/Final_Project/assets/119247984/1edf29d9-d837-4538-b253-afcb65f3ce96)
+![ERD](https://github.com/bhernley/Final_Project/assets/119247984/b9f08baf-a047-4a01-8a39-95e6e6044a21)
 
 And finally the data set was converted to all numerical values so that it could be used in our machine learning tools.
 
