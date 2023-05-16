@@ -10,9 +10,14 @@ For our project, we are analyzing a dataset from Kaggle about Diabetes and other
 ## Dataset Info:
 The dataset is a collection of EHRs (Electronic Health Records) sourced from different healthcare providers as part of their clinical practices. EHRs are a great way to analyze patient health records and can be used progressively along the life of the patient. The dataset was sourced from Kaggle, licensed by the original author,[Mohammed Mustafa](https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset). The dataset was collected from patients on a random scale from surveys, medical records, and lab tests. It has been pre-processed, and processed farther by this team, leaving the dataset with 11 columns and ~64,000 rows turned into integers where necessary for MachineLearning analysis.
 
+The following image shows the original, raw data as we received it with categories hypertension, heart_disease, smoking_history and diabetes.  The dataset originally contained 100k rows of information.
 ![Original Dataset Example](https://github.com/bhernley/Final_Project/assets/119247984/d58bfa09-6e91-4dd7-9cc8-ccbff3249015)
 
-The above image shows the original data as we received it with categories hypertension, heart_disease, smoking_history and diabetes.
+The file was then cleaned removing any null values and adding a unique identifier as "patient_no" in order to further process the dataset.  This left us approximately 64k rows of information. 
+
+![cleaned dataset sample](https://github.com/bhernley/Final_Project/assets/119247984/1edf29d9-d837-4538-b253-afcb65f3ce96)
+
+And finally the data set was converted to all numerical values so that it could be used in our machine learning tools.
 
 ![final dataset sample](https://github.com/bhernley/Final_Project/assets/119247984/4765572d-75d4-4e5e-be2c-c33b7ae9ba76)
 
@@ -27,7 +32,7 @@ We can see that the gender breakdown is fairly close.
 
 ![Age_Group_Count_Final](https://github.com/bhernley/Final_Project/assets/119247984/87387965-56eb-4d4a-96a3-98d7c01ca6a8)
 
-As far as age goes, there is a wide... wide breadth of data. There are 101 rows of age data, which we have binned by 10 year marks for analysis.
+We were able to bin the data into age groups as shown above.  As age increases, we see the number of patients increase with each age group.
 
 ## Question to be answered: 
 If one is positive for more factors featured in this data set, is one more likely to test positive for diabetes?
@@ -48,12 +53,13 @@ The final data contained the features patient_no, gender_num, age_range, hyperte
 We also bucketed the ages in order to add another analytics aspect based on age. We created numeric data to allow for MachineLearning models to run which were successful.
 
 Binned Age Range:
- 0. <18
- 1. 19-25
- 2. 26-35
- 3. 36-45
- 4. 46-55
- 5. 56+
+
+ 0= <18
+ 1= 19-25
+ 2= 26-35
+ 3= 36-45
+ 4= 46-55
+ 5= 56+
 
 While we were exploring, we found that the accuracy score was great with the Gradient Tree MachineLearning.
 We've found that the Gradient Tree MachineLearning model gives us the best output resulting in a 96% accuracy rating after using the GradientBoostingClassifer. We decided to use the GradientTree MachineLearning since our output was so successful after trying Decision Tree, Logistical Regression, Random Forest Classifier, and Random OverSampling all with accuracy scores and confusion matrixes.
