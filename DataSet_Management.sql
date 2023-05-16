@@ -22,9 +22,9 @@ ALTER TABLE Original_Dataset
 
 Drop TABLE Clean_Dataset ;
 CREATE TABLE Clean_Dataset (
-	patient_no INT,
+	patient_no INT PRIMARY KEY,
 	gender VARCHAR(10),
-	age FLOAT,
+	age NUMERIC,
 	hypertension BOOL,
 	heart_disease BOOL,
 	smoking_history VARCHAR(40),
