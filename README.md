@@ -57,9 +57,6 @@ Binned Age Range:
 
 While we were exploring, we found that the accuracy score was great with the Gradient Tree MachineLearning.
 We've found that the Gradient Tree MachineLearning model gives us the best output resulting in a 96% accuracy rating after using the GradientBoostingClassifer. We decided to use the GradientTree MachineLearning since our output was so successful after trying Decision Tree, Logistical Regression, Random Forest Classifier, and Random OverSampling all with accuracy scores and confusion matrixes.
-
-<img width="507" alt="Screenshot 2023-05-10 at 5 34 13 PM" src="https://github.com/bhernley/Final_Project/assets/117100491/9e6717af-3e5b-4dd4-b0e0-770963bd48e4">
-
 We trained the model with a train_test_split twice, moving into the StandardScaler instance and using the Decision Tree Classifier, confusion matrix and accuracy score, the results were less than optimal.
 Then, we trained the Random Forest Classifier coding with the confusion matrix and accuracy score with the classification report. This gave us a very good outcome, but recall is a less than optimal.
 Then we sorted the importance of the features.
@@ -72,10 +69,12 @@ Finally, we moved into the Gradient Boosting Classifier to predict the actual da
 
 ![Screenshot 2023-05-15 at 5 14 25 PM](https://github.com/bhernley/Final_Project/assets/117100491/003cbf01-cfa6-4c9c-bcfe-27d2343a44b4)
 
-**Above is a basic summary of our findings!**
+**Above is a basic summary of our findings for MachineLearning!**
 
 ## Links:
 Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN18IX1v0AwdYgSdBLA/edit?usp=sharing
+
+## File Info:
 
 ## Communication
 - Communicate through Slack every day concerning progress of personal tasks.
@@ -94,8 +93,8 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 - Google Slides
 
 ## Challenges:
-- Identifying proper MachineLearning techniques to coding. Trouble rectifying the data set question to the MachineLearning.
-- Need to communicate Segment needs earlier. Make sure we're all still in the same boat.
+- Identifying proper MachineLearning language in presentation. 
+- Need to set bring our different pieces together for the charts and slides
 ## Moving Forward:
 **Segment 1 Requirements:**
 - [X] Need to fix table issues recorded in grade review - README.md has been updated as mentioned in review
