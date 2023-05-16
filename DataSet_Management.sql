@@ -43,70 +43,70 @@ select * FROM Clean_Dataset;
 --we'll first see how many are positive and then pull a sample of negative patients to match, we'll then combine
 --the results into a final table named 'diabetes_sample'
 
-SELECT * FROM Clean_Dataset 
- WHERE diabetes = true;
- --export as diabetes_true.csv
+-- SELECT * FROM Clean_Dataset 
+--  WHERE diabetes = true;
+--  --export as diabetes_true.csv
   
-SELECT * FROM Clean_Dataset
- WHERE diabetes = false
- LIMIT 7046;
- --export as diabetes_false.csv
+-- SELECT * FROM Clean_Dataset
+--  WHERE diabetes = false
+--  LIMIT 7046;
+--  --export as diabetes_false.csv
 
---creating 
-drop table diabetes_true;
-CREATE TABLE diabetes_true(
-	patient_no INT,
-	gender VARCHAR(10),
-	age FLOAT,
-	hypertension BOOL,
-	heart_disease BOOL,
-	smoking_history VARCHAR(40),
-	have_ever_smoked BOOL,
-	bmi DECIMAL(4,2),
-	HbA1c_level DECIMAL(2,1),
-	blood_glucose_level INT,
-	diabetes BOOL);
---diabetes_true.csv
+-- --creating 
+-- drop table diabetes_true;
+-- CREATE TABLE diabetes_true(
+-- 	patient_no INT,
+-- 	gender VARCHAR(10),
+-- 	age FLOAT,
+-- 	hypertension BOOL,
+-- 	heart_disease BOOL,
+-- 	smoking_history VARCHAR(40),
+-- 	have_ever_smoked BOOL,
+-- 	bmi DECIMAL(4,2),
+-- 	HbA1c_level DECIMAL(2,1),
+-- 	blood_glucose_level INT,
+-- 	diabetes BOOL);
+-- --diabetes_true.csv
 
-drop table diabetes_false;
-CREATE TABLE diabetes_false(
-	patient_no INT,
-	gender VARCHAR(10),
-	age FLOAT,
-	hypertension BOOL,
-	heart_disease BOOL,
-	smoking_history VARCHAR(40),
-	have_ever_smoked BOOL,
-	bmi DECIMAL(4,2),
-	HbA1c_level DECIMAL(2,1),
-	blood_glucose_level INT,
-	diabetes BOOL);
---export diabetes_false.csv
+-- drop table diabetes_false;
+-- CREATE TABLE diabetes_false(
+-- 	patient_no INT,
+-- 	gender VARCHAR(10),
+-- 	age FLOAT,
+-- 	hypertension BOOL,
+-- 	heart_disease BOOL,
+-- 	smoking_history VARCHAR(40),
+-- 	have_ever_smoked BOOL,
+-- 	bmi DECIMAL(4,2),
+-- 	HbA1c_level DECIMAL(2,1),
+-- 	blood_glucose_level INT,
+-- 	diabetes BOOL);
+-- --export diabetes_false.csv
 
-select * from diabetes_false;
-select * from diabetes_true;
+-- select * from diabetes_false;
+-- select * from diabetes_true;
 
---creating table to merge samples
-drop TABLE diabetes_sample;
-CREATE TABLE diabetes_sample(
-	patient_no INT,
-	gender VARCHAR(10),
-	age FLOAT,
-	hypertension BOOL,
-	heart_disease BOOL,
-	smoking_history VARCHAR(40),
-	have_ever_smoked BOOL,
-	bmi DECIMAL(4,2),
-	HbA1c_level DECIMAL(2,1),
-	blood_glucose_level INT,
-	diabetes BOOL);
---merging	
-INSERT INTO diabetes_sample SELECT * FROM diabetes_false;
-INSERT INTO diabetes_sample SELECT * FROM diabetes_true;
+-- --creating table to merge samples
+-- drop TABLE diabetes_sample;
+-- CREATE TABLE diabetes_sample(
+-- 	patient_no INT,
+-- 	gender VARCHAR(10),
+-- 	age FLOAT,
+-- 	hypertension BOOL,
+-- 	heart_disease BOOL,
+-- 	smoking_history VARCHAR(40),
+-- 	have_ever_smoked BOOL,
+-- 	bmi DECIMAL(4,2),
+-- 	HbA1c_level DECIMAL(2,1),
+-- 	blood_glucose_level INT,
+-- 	diabetes BOOL);
+-- --merging	
+-- INSERT INTO diabetes_sample SELECT * FROM diabetes_false;
+-- INSERT INTO diabetes_sample SELECT * FROM diabetes_true;
 
 
-select * from diabetes_sample;
---export as diabetes_sample.CSV
+-- select * from diabetes_sample;
+-- --export as diabetes_sample.CSV
 
 
 -- group by age count
@@ -363,6 +363,7 @@ JOIN diabetes_numeric_cleantable ON gender_numeric_cleantable.patient_no = diabe
 
 
 -- joining all numerical tables into 1 final table
+drop table Final_Dataset_2
 CREATE TABLE Final_Dataset_2 AS 
 SELECT gender_numeric_cleantable.patient_no, gender_numeric, age, age_range, hypertension_numeric, heart_disease_numeric, smoking_history_numeric, bmi, hba1c_level, blood_glucose_level, diabetes_numeric
 FROM gender_numeric_cleantable
