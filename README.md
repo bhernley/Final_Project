@@ -6,7 +6,7 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 
 
 ## File Info:
-
+Diabetes_FP_GradientTree.ipynb = the final MachineLearning model coding analysis
 
 ## Members:
 - Bradley
