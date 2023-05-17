@@ -62,6 +62,8 @@ How do the features given affect a likely outcome of positive diabetes diagnosis
   - Does gender play a role?
 
   ANSWERS: See slide deck, Tableau Story, and Below for summary
+  
+  **Visualisation Components - https://public.tableau.com/app/profile/cj.picard/viz/LifestyleMedicallyCorrelativeIndicatorsofDiabetes/DiabetesDraft **
 
 There are slight but noticeable associations between diabetes and many factors included in the data set:
 Diabetes likelihood increases with age, peaking in early 60s in our observations
@@ -132,10 +134,10 @@ Finally, we moved into the Gradient Boosting Classifier to predict the actual da
  A visual anomaly was identified in sugar values among Diabetes-Positive individuals around the 18-22 age range. We recommend further assessment of medical and socio-cultural factors among this or other relevant populations to seek cause or correlation explaining the measure deltas in sugar scores. Could this be related to when people traditionally “leave home” and make their own choices and explorations in diet and socio-cultural behaviors like smoking (inhibiting hunger drive), poor diet, sedentary behavior, etc.?
 
 ## Moving Forward:
-**Segment 1 Requirements:**
+**Segment Requirements:**
 - [X] Need to fix table issues recorded in grade review - README.md has been updated as mentioned in review
 
-**Segment 2 Requirements:**
+**Segment Requirements:**
 - [X] Detailed README.md that includes project status, images, descriptions, and results. (20 points)
 - [X] At least 8 commits per team member (20 points)
 - [X] Machine learning model, confusion matrix/accuracy score (20)
@@ -143,23 +145,11 @@ Finally, we moved into the Gradient Boosting Classifier to predict the actual da
 - [X] Selected topic and reasoning for the selection
 - [X] Description of data
 - [X] Questions planned to answer
-- [ ] Description of the data exploration phase
-- [ ] Description of the analysis phase
+- [X] Description of the data exploration phase
+- [X] Description of the analysis phase
 - [X] Technologies, languages, tools, and algorithms that the team used.
 
-Visualisation Components Under Construction - Plan to show fundamental correlations among data set population and present notable standout correlative indicators for Diabetes and/or physical/behavioral norms.  Below are snips from the current dash:
 
-![Data set raw counts +/-](Set%20Raw%20Count.PNG)
-
-![BG & BMI Pos D](BG%20&%20BMI%20Positive%20D.PNG)
-
-![BG & BMI Neg D](BG%20&%20BMI%20Negative%20D.PNG)
-
-![Avg BG & BMI for Pos & Neg D](Avg%20BG%20&%20BMI%20for%20Pos%20&%20Neg%20D.PNG)
-
-![Avg BG for Pos & Neg D](Avg%20Blood%20Glucose%20PosNeg.PNG)
-
-The above is for further discussion regarding priorities, thematics, and order - inclusive of more images covering more correlative standards and anomalies.
 
 [^1]: [https://www.niddk.nih.gov/health-information/diabetes/overview/symptoms-causes#:~:text=Overweight%2C%20obesity%2C%20and%20physical%20inactivity,people%20with%20type%202%20diabetes.]
 
