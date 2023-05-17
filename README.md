@@ -43,16 +43,27 @@ We were able to bin the data into age groups as shown above.  As age increases, 
 
 ## Question to be answered: 
 If one is positive for more factors featured in this data set, is one more likely to test positive for diabetes?
-  - Yes - how can this be indicated by the data and to what degree?
+  - Yes - limited indications with existing data.
 
 Is there a discernable difference if the patient has a history of high blood sugar, BMI, smoking, etc.?
-  - Acknowledged. See (final) images.
+  - Yes. See (final) images.
 
 How do the features given affect a likely outcome of positive diabetes diagnosis?
   - Will a mix of features correlate in an identifiable and way?
   - Can such features be linked with this data?
   - How does age impact a likely diagnosis
   - Does gender play a role?
+
+  ANSWERS: See slide deck, Tableau Story, and Below for summary
+
+There are slight but noticeable associations between diabetes and many factors included in the data set:
+Diabetes likelihood increases with age, peaking in early 60s in our observations
+Males show a marginally higher inclination for diabetes than females
+Smoking extends a likely association with diabetes in conjunction with age
+A relatively higher BMI than the non-diabetic average after age 22 is consistently correlated with diabetes
+Relatively higher Hba1c & blood glucose levels compared to non-diabetic averages  most significantly and consistently indicate positively for diabetes
+Heart disease and hypertension are shared risk factors with Type 2 Diabetes but do not show high correlation in our data set - possibly due to limited values or a wide age range
+
 ## Data Exploration & Findings:
 ### DataBase Management:
 After initially pulling the data, we removed all null values while also altering some categorization that did not make sense. For example, the smoking_history category had ever instead of never. The data was first cleaned by giving each patient was given a unique identifier as a "patient_no", as well has removing rows with missing information. Smoking history responses were also coverted to a yes/no format for any level of smoking history.
