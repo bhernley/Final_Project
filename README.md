@@ -65,6 +65,9 @@ Relatively higher Hba1c & blood glucose levels compared to non-diabetic averages
 Heart disease and hypertension are shared risk factors with Type 2 Diabetes but do not show high correlation in our data set - possibly due to limited values or a wide age range
 
 ## Data Exploration & Findings:
+
+  - See Dashboard and Slide Deck findings and future recommendations
+
 ### DataBase Management:
 After initially pulling the data, we removed all null values while also altering some categorization that did not make sense. For example, the smoking_history category had ever instead of never. The data was first cleaned by giving each patient was given a unique identifier as a "patient_no", as well has removing rows with missing information. Smoking history responses were also coverted to a yes/no format for any level of smoking history.
 The final data contained the features patient_no, gender_num, age_range, hypertension, heart_disease, smoking_history, bmi, hba1c_level, blood_glucose, and diabetic.
@@ -95,9 +98,6 @@ Finally, we moved into the Gradient Boosting Classifier to predict the actual da
 
 ![Screenshot 2023-05-15 at 5 14 25 PM](https://github.com/bhernley/Final_Project/assets/117100491/003cbf01-cfa6-4c9c-bcfe-27d2343a44b4)
 
-### Dashboard
-
-CJ
 
 **Above is a basic summary of our findings for MachineLearning!**
 
