@@ -63,7 +63,7 @@ How do the features given affect a likely outcome of positive diabetes diagnosis
 
   ANSWERS: See slide deck, Tableau Story, and Below for summary
   
-  **Visualisation Components - https://public.tableau.com/app/profile/cj.picard/viz/LifestyleMedicallyCorrelativeIndicatorsofDiabetes/DiabetesDraft **
+  Visualisation Components - https://public.tableau.com/app/profile/cj.picard/viz/LifestyleMedicallyCorrelativeIndicatorsofDiabetes/DiabetesDraft
 
 There are slight but noticeable associations between diabetes and many factors included in the data set:
 Diabetes likelihood increases with age, peaking in early 60s in our observations
