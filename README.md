@@ -122,7 +122,7 @@ CJ
 - Need to set bring our different pieces together for the charts and slides
 
 ## Future Recommendations:
-
+ A visual anomaly was identified in sugar values among Diabetes-Positive individuals around the 18-22 age range. We recommend further assessment of medical and socio-cultural factors among this or other relevant populations to seek cause or correlation explaining the measure deltas in sugar scores. Could this be related to when people traditionally “leave home” and make their own choices and explorations in diet and socio-cultural behaviors like smoking (inhibiting hunger drive), poor diet, sedentary behavior, etc.?
 
 ## Moving Forward:
 **Segment 1 Requirements:**
