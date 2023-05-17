@@ -7,6 +7,12 @@ Slide deck - https://docs.google.com/presentation/d/141F7PRugIfyXXmmNoxr6E6akwN1
 
 ## File Info:
 Diabetes_FP_GradientTree.ipynb = the final MachineLearning model coding analysis
+DataSet_Management.sql = SQL code for the database
+Final_Dataset.csv = Dataset used for MachineLearning model
+Final_Dataset2.csv = Dataset that includes individual ages
+clean_dataset.csv = cleaned Dataset
+diabetes_prediction_dataset.csv = original raw dataset
+images - folder containing images pulled from the database to use in the readme and presentation
 
 ## Members:
 - Bradley
